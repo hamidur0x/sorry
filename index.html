@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1a1a4b, #4b1a1a);
+            /* Darker gradient for better contrast */
+            color: #f0f0f0;
+            /* Light text color for better readability */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffcc00;
+            /* Bright yellow for the heading */
+        }
+
+        p {
+            line-height: 1.6;
+            color: #e0e0e0;
+            /* Slightly lighter text for paragraphs */
+        }
+
+        a {
+            color: #ffcc00;
+            /* Match link color with heading */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+            /* Change link color on hover for visibility */
+        }
+
+        .box {
+            max-width: 1000px;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: linear-gradient(to right, #d01407, #750202);
+            /* Adjusted gradient for button */
+            border: none;
+            padding: 10px 20px;
+            /* Increased padding for better clickability */
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #ffffff;
+            /* White text for button */
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+            /* Change button color on hover */
+            color: #000000;
+            /* Dark text on hover for contrast */
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .box img {
+            width: 45%;
+            border-radius: 8px;
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 760px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 24px;
+            }
+
+            .box img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="media/h.gif" alt="404">
+        <h1>We messed up</h1>
+        <button><a href="pages/1.html">Fix it?</a></button>
+    </div>
+</body>
+
+</html>
