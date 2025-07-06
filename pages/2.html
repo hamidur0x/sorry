@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Please</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kings&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1a1a4b, #4b1a1a); /* Darker gradient for better contrast */
-            color: #f0f0f0; /* Light text color for better readability */
+            background: linear-gradient(45deg, #1a1a4b, #8B0000); /* Blended gradient */
+            color: #f0f0f0; 
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
 
         a {
-            color: #ffcc00; /* Bright yellow for links */
+            color: #ffcc00; 
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-family: "Kings", cursive;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #ffffff; /* Change link color on hover for visibility */
+            color: #ffffff; 
         }
 
         button {
-            background: linear-gradient(to right, #d01407, #750202); /* Adjusted gradient for button */
+            background: linear-gradient(45deg, #d01407, #750202); /* Adjusted gradient for button */
             border: none;
-            padding: 10px 20px; /* Increased padding for better clickability */
-            border-radius: 20px;
+            padding: 15px 30px; 
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 16px;
-            color: #ffffff; /* White text for button */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 18px;
+            color: #ffffff; 
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s; 
         }
 
         button:hover {
-            background-color: #ffcc00; /* Change button color on hover */
-            color: #000000; /* Dark text on hover for contrast */
+            background-color: #ffcc00; 
+            color: #000000; 
+            transform: scale(1.05); 
         }
 
         button:focus {
@@ -44,55 +64,62 @@
         }
 
         h2 {
-            color: #d9fc66; /* Bright yellow-green for headings */
-            margin: 10px 0; /* Added margin for spacing */
+            color: #d9fc66; 
+            margin-bottom: 10px;
+            font-size: 2rem; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+              font-family: "Molengo", sans-serif;
+
         }
 
         p {
-            color: #ffffff; /* White text for paragraphs */
+            color: #ffffff; 
             line-height: 1.6;
+            font-family: "Molengo", sans-serif;
         }
 
         .box {
             max-width: 600px;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            position: absolute;
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
         }
 
         .box img {
             width: 50%;
             border-radius: 8px;
-            position: relative;
-            top: 0;
-            left: 0;
             transition: transform 0.3s ease;    
         }
+
+        .box img:hover {
+            transform: scale(1.1); 
+        }
+
         @media (max-width: 760px) {
-            h1 {
-                font-size: 1.5rem;
+            h2 {
+                font-size: 1.5rem; 
             }
 
             button {
-                font-size: 14px;
-                padding: 10px 24px;
+                font-size: 16px;
+                padding: 10px 20px; 
             }
 
             .box img {
-                max-width: 100%;
+                max-width: 100%; 
             }
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <img src="../media/i-love-you-rose.gif" alt="404">
-        <h2>You're more than my girl - you're</h2>
-        <h2>my world.</h2>
+        <h2>You're more than my girl you're my world</h2>
         <h2>Please forgive me. 💓</h2>
         <button><a href="../pages/1.html">Forgive me?</a></button>
     </div>
 </body>
+
 </html>
